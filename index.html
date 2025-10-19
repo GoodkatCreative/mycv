@@ -64,6 +64,18 @@
             animation: fadeIn 1s 4s both;
         }
 
+        .linkedin-link {
+            color: #ff6b35;
+            text-decoration: none;
+            font-family: 'Geist Mono', monospace;
+            transition: all 0.3s ease;
+        }
+
+        .linkedin-link:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
@@ -274,22 +286,101 @@
         @media (max-width: 768px) {
             .name {
                 font-size: 2rem;
+                animation: none;
+                border-right: none;
+                white-space: normal;
+                overflow: visible;
             }
             
             .container {
                 padding: 10px;
             }
             
+            .header {
+                padding: 20px 15px;
+                margin-bottom: 30px;
+            }
+            
+            .contact-info {
+                font-size: 0.8rem;
+                line-height: 1.5;
+                animation: none;
+                opacity: 1;
+            }
+            
             .section {
                 padding: 15px;
+                margin-bottom: 25px;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+            }
+            
+            .job {
+                padding: 15px;
+            }
+            
+            .job-title {
+                font-size: 1.1rem;
             }
             
             .skills-grid {
                 grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            
+            .skill-category {
+                padding: 15px;
             }
             
             .languages {
                 flex-direction: column;
+            }
+            
+            .language {
+                min-width: auto;
+            }
+            
+            .education-item {
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .name {
+                font-size: 1.8rem;
+            }
+            
+            .container {
+                padding: 5px;
+            }
+            
+            .header {
+                padding: 15px 10px;
+            }
+            
+            .contact-info {
+                font-size: 0.75rem;
+            }
+            
+            .section {
+                padding: 12px;
+                border-left-width: 2px;
+            }
+            
+            .section-title {
+                font-size: 1.3rem;
+            }
+            
+            .job, .skill-category, .education-item, .language {
+                padding: 12px;
+            }
+            
+            .skill-item {
+                font-size: 0.8rem;
+                padding: 4px 8px;
+                margin: 2px;
             }
         }
     </style>
@@ -299,13 +390,16 @@
         <header class="header">
             <h1 class="name">GEORG STRAUB</h1>
             <div class="contact-info">
-                Gonellastraße 48, 40668 Meerbusch | (+49) 163 4821371 | georg.straub@outlook.de
+                Gonellastraße 48, 40668 Meerbusch | (+49) 163 4821371 | georg.straub@outlook.de<br>
+                <a href="https://www.linkedin.com/in/georg-straub-9a8153182/" target="_blank" rel="noopener noreferrer" class="linkedin-link">
+                    LinkedIn: georg-straub-9a8153182
+                </a>
             </div>
         </header>
 
         <section class="section">
             <h2 class="section-title">Kurzprofil <span class="terminal-cursor"></span></h2>
-            <p>Erfahrener <strong>Expert Process Consultant</strong> (8+ Jahre) mit Fokus auf Digitalisierung, <strong>Agilem Projektmanagement</strong> (Scrum/Kanban) und <strong>Applikationsmanagement</strong>. Spezialist für die <strong>Einführung von KI/LLMs (GPT-5, Gemini)</strong> und interdisziplinäre Koordination in kritischen Projekten von hoher gesellschaftlicher Relevanz.</p>
+            <p>Erfahrener <strong>Expert Process Consultant</strong> mit Fokus auf Digitalisierung, <strong>Agilem Projektmanagement</strong> (Scrum/Kanban) und <strong>Applikationsmanagement</strong>. Spezialist für die <strong>Einführung von KI/LLMs (GPT-5, Gemini)</strong> und interdisziplinäre Koordination in kritischen Projekten von hoher gesellschaftlicher Relevanz.</p>
         </section>
 
         <section class="section">
@@ -436,5 +530,5 @@
             });
         });
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9912e93e066a7a4f',t:'MTc2MDkwNDU0NS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9912ff4cb3e7c7fc',t:'MTc2MDkwNTQ0OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
